@@ -1,5 +1,6 @@
 ## How to Run
 1. After cloning the project, please run "composer install" 
+2. Then run this command for database migration: "php artisan migrate"
 
 ## Roles
 1. There are two types of roles implemented in this application: admin and user. 
