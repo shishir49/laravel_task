@@ -1,0 +1,143 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: auto;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+.d-wrapper {
+    display: grid;
+    grid-template-columns: 0.2fr 1fr;
+}
+
+.d-sidebar {
+   height: 100vh;
+   overflow: auto;
+   background-color: #3b3b3b;
+}
+
+.d-content {
+   height: 100vh;
+}
+
+.d-header {
+    height: 10vh;
+    background-color: #acacac;
+}
+
+.d-body {
+    height: 90vh;
+    overflow: auto;
+}
+
+/* Sidebar */
+
+.brand {
+    height: 10vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 20px;
+}
+
+.brand a {
+    text-decoration: none;
+    color: white;
+}
+
+.active {
+    color: white !important;
+}
+
+.active-background {
+    /* background-color: #353535 !important; */
+    background-color: #161616 !important;
+}
+
+.menu {
+    
+}
+
+.primary-menu {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.primary-menu > a {
+    text-decoration: none;
+}
+
+.primary-menu .dropdown-title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+}
+
+/* .primary-menu .dropdown-title i {
+    padding: 20px 0 !important;
+} */
+
+.menu-item {
+    width: 100%;
+    cursor: pointer; 
+    transition: 0.3s ease-in-out;
+    color: #838383;
+    display: flex;
+    gap: 10px;
+}
+
+.menu-item:hover {
+    color: white;
+}
+
+.dropdown-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* background-color: #0a0a0a; */
+    background-color: #2f2f2f;
+    transition: 1s ease-in-out;
+}
+
+.dropdown-content a {
+    padding: 8px 45px;
+    transition: 0.3s ease-in-out;
+    font-size: 13px;
+    border-bottom: 1px dashed #3b3b3b;
+    text-decoration: none;
+    color: #838383;
+}
+
+.dropdown-content a:last-child {
+    border-bottom: none;
+}
+
+.dropdown-content a:hover {
+    /* background: #353535; */
+    background-color: #161616;
+}
+
+.dropdown-content a:focus {
+    background: #161616;
+}
+
+.invisible {
+    display: none;
+}
+
+.fa-solid {
+    text-align: right !important;
+}
+
+/* Table */
+
+.table {
+    width: 100% !important;
+}

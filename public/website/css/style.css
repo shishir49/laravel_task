@@ -1,0 +1,120 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: auto;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+/* HEADER */
+
+.w-header {
+   height: 15vh;
+   background-color: #103453;
+}
+
+.navigation-menu {
+    border-left: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.navigation-menu > a {
+    text-decoration: none;
+    color: rgb(231, 231, 231);
+    font-weight: bold;
+}
+
+.navigation-menu > a:hover {
+    color: rgb(255, 255, 255);
+}
+
+
+/* HEADER ENDS */
+
+.w-body {
+   min-height: 75vh;
+}
+
+/* User Login */
+
+/* Blog */
+
+/* Blog Card */
+.blogs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.blogs > .blog-card {
+    padding: 40px;
+}
+
+.blog-card > .writer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blogs > .blog-card > *:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.blogs > .blog-card:nth-child(odd) {
+    background-color: aliceblue;
+}
+
+/* Blog Card Ends*/
+
+.blog-content {
+    width: 80%;
+    border: 1px solid #ebebeb;
+    padding: 5%;
+}
+
+.blog-content > .writer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog-content > .blog-description > *:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.blog-content > .blog-featured-image > img {
+    width: 100%;
+}
+
+.blog-content > .blog-featured-image {
+    margin: 25px 0;
+}
+
+/* Blog Ends*/
+
+/* User Login Ends */
+.w-footer {
+    height: 10vh;
+    background-color: #103453;
+}
+
+.socials {
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.socials > * {
+    color: white !important;
+}
+  
+.socials > *:hover {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+/* .socials > *:hover {
+    color: aliceblue;
+} */
