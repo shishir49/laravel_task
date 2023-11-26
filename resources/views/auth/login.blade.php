@@ -38,16 +38,13 @@ $(document).ready(function(){
         });
 
         $.ajax({
-            url: "http://127.0.0.1:8000/verifyUser",
+            url: "{{url('verifyUser')}}",
             type: "POST",
             dataType: 'json',
             data: {
                 email: email,
                 password: password
             },
-            // headers: {
-            //     Authorization: 'Bearer '+ token
-            // },
             error: function(err) {
                 alert("Username Password combination is incorrect");
             },

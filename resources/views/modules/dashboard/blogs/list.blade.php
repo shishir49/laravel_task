@@ -35,10 +35,14 @@
     });
 
     $(function () {
-    
+        var token = localStorage.getItem("token");
         var table = $('.data-table').DataTable({
             processing: true,
             serverSide: true,
+            dataType: 'JSON',
+            headers: {
+                Authorization: 'Bearer '+ token
+            },
             ajax: "{{ url('api/blogData') }}",
             columns: [
                 {data: 'id', name: 'id'},

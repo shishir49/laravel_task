@@ -33,7 +33,7 @@ class BlogController extends Controller
                 return Datatables::of($data)
                         ->addIndexColumn()
                         ->addColumn('action', function($row){
-                               $btn = '<div class="d-flex gap-2"><a href="'.url('user/dashboard/blog/edit/'.$row->id).'" class="text-primary"><i class="fa-solid fa-pen"></i></a><a href="'.$row->id.'" class="text-success"><i class="fa-solid fa-eye"></i></a><a href="'.url('blog/delete/'.$row->id).'" class="text-danger"><i class="fa-solid fa-trash"></i></a></div>';
+                               $btn = '<div class="d-flex gap-2"><a href="'.url('user/dashboard/blog/edit/'.$row->id).'" class="text-primary"><i class="fa-solid fa-pen"></i></a><a href="'.url('blog/'.$row->id).'" class="text-success"><i class="fa-solid fa-eye"></i></a><a href="'.url('blog/delete/'.$row->id).'" class="text-danger"><i class="fa-solid fa-trash"></i></a></div>';
                                 return $btn;
                         })
                         ->rawColumns(['action'])
@@ -46,7 +46,7 @@ class BlogController extends Controller
                             return $row->status;
                         })
                         ->addColumn('action', function($row){
-                               $btn = '<div class="d-flex gap-2"><a href="'.url('admin/dashboard/blog/edit/'.$row->id).'" class="text-primary"><i class="fa-solid fa-pen"></i></a><a href="'.$row->id.'" class="text-success"><i class="fa-solid fa-eye"></i></a><a href="'.url('blog/delete/'.$row->id).'" class="text-danger"><i class="fa-solid fa-trash"></i></a></div>';
+                               $btn = '<div class="d-flex gap-2"><a href="'.url('admin/dashboard/blog/edit/'.$row->id).'" class="text-primary"><i class="fa-solid fa-pen"></i></a><a href="'.url('blog/'.$row->id).'" class="text-success"><i class="fa-solid fa-eye"></i></a><a href="'.url('blog/delete/'.$row->id).'" class="text-danger"><i class="fa-solid fa-trash"></i></a></div>';
                                 return $btn;
                         })
                         ->rawColumns(['action'])

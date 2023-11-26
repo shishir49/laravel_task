@@ -23,7 +23,7 @@
             </div>
 
             <div class="direction d-flex justify-content-center gap-4 mt-4">
-                <a href="{{ url('/') }}" class="btn btn-danger">Back</a>
+                <a href="{{ url('/') }}" class="btn btn-danger">Home</a>
             </div>
         </div>
     </div>
